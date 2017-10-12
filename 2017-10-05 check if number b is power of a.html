@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+</head>
+
+<body>
+   <script>
+
+   var a //первое число
+   var b // Число В
+   var c // число А в С
+
+   do {
+      a = prompt("Bведите число А");
+      var prov = parseFloat(a);
+
+      if (a != prov) {
+         alert("Введите число!");
+      } else {
+			   a = prov
+			}
+   } while (a != prov);
+
+   do {
+      b = prompt("Введите число В");
+      var prov = parseFloat(b);
+
+      if (b != prov) {
+         alert("Введите число!");
+      } else {
+				b = prov
+			}
+   } while (b != prov);
+
+   c = a;
+
+   do {
+      if (c > b) {
+         c = c / b;
+      }
+
+      if (c == b) {
+         alert("число А (" + a + ") является степенью В ("+b+")");
+      }
+
+      if (c < b) {
+         alert("число А (" + a + ") не является степенью В ("+b+")");
+      }
+   } while (c > b);
+
+   </script>
+</body>
+</html>
